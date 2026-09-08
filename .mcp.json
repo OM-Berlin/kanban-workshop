@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "ablage": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${ABLAGE_ORDNER}"
+      ]
+    }
+  }
+}

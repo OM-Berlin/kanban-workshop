@@ -16,3 +16,14 @@ ist das der Unterschied zwischen Zuschauen und Arbeiten.
 
 Spalten und Karten kennt jeder. Wer das Werkzeug lernen will, soll sich nicht
 zusätzlich mit dem Gegenstand herumschlagen.
+
+## [2026-09-15] Sicherheit | raw/ wird durch einen Hook geschuetzt, nicht durch eine Bitte
+
+In CLAUDE.md stand schon, dass raw/ nur gelesen wird. Eine Regel im Text kann
+ueberlesen werden, ein Hook nicht. Was sich mechanisch pruefen laesst, gehoert
+in einen Hook.
+
+## [2026-09-15] Ablage | Ueber MCP wird genau ein Ordner freigegeben
+
+Nicht das Benutzerverzeichnis. Was nicht freigegeben ist, kann auch nicht
+versehentlich gelesen werden.

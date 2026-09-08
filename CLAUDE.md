@@ -39,3 +39,39 @@ Deutsch. Auch in Kommentaren und Commit-Nachrichten.
 
 Eine Übergabe nach `brainstorms/` schreiben: Was ist passiert, was ist offen,
 womit geht es weiter. Damit die nächste Sitzung nicht bei null anfängt.
+
+---
+
+*Ab hier: dazugekommen am Dienstag.*
+
+## Wie du antwortest
+
+Kurz. Kein „Gerne!", kein „Ich hoffe, das hilft!". Sag, was du getan hast und
+was als Nächstes ansteht — mehr nicht. Wenn ich mehr wissen will, frage ich.
+
+## Was ich mir gebaut habe
+
+| Werkzeug | Was es tut |
+|---|---|
+| `.claude/skills/aufgaben-aus-notiz/` | Macht aus einer rohen Notiz saubere Aufgabenkarten |
+| `.claude/hooks/letzte-uebergabe.sh` | Zeigt beim Start der Sitzung die letzte Übergabe |
+| `.claude/hooks/raw-ist-schreibgeschuetzt.sh` | Bricht ab, wenn jemand in `raw/` schreiben will |
+| `.mcp.json` | Bindet einen einzelnen Ordner meiner Ablage an |
+
+Ein Hook ist keine Bitte, sondern eine Sperre. Wenn der zweite Hook zuschlägt,
+ist das kein Fehler — dann war der Schreibversuch falsch.
+
+## Wissen pflegen
+
+Was ich in vier Wochen noch einmal nachschlage, gehört nach `wiki/` — mit
+einer Zeile in `wiki/index.md`, sonst findet es niemand wieder. Was nur heute
+gilt, gehört nicht dorthin.
+
+Harte Entscheidungen kommen nach `decisions/log.md`, unten angehängt, mit
+Datum und Begründung. Alte Einträge werden nicht geändert.
+
+## Schlüssel
+
+Kommen nie in eine Datei, die hochgeladen wird. Sie stehen in `.env.local`.
+Wenn dir ein Schlüssel irgendwo anders begegnet, sag es mir, statt ihn zu
+verschieben.
