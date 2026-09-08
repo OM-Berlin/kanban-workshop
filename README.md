@@ -23,6 +23,14 @@ Ab `startvorlage` steht in dieser Datei auch, wie die Anwendung in Betrieb
 geht. Solange hier noch keine Anwendung liegt, gibt es nichts zu starten —
 der Ordner ist Arbeitsplatz, noch kein Programm.
 
+## Die laufende Fassung
+
+Das Referenzprojekt liegt unter
+<https://kanban-workshop-k1t7zvtcv-oupdos-projects.vercel.app>.
+
+Das ist die Fassung des Kursleiters, gegen die vorgeführt wird. Ihre eigene
+Anwendung bekommt am Mittwoch eine eigene Adresse.
+
 ## In Betrieb nehmen
 
 Ab dem Stand `startvorlage` liegt hier eine Anwendung.
