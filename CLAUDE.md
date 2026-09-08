@@ -75,3 +75,31 @@ Datum und Begründung. Alte Einträge werden nicht geändert.
 Kommen nie in eine Datei, die hochgeladen wird. Sie stehen in `.env.local`.
 Wenn dir ein Schlüssel irgendwo anders begegnet, sag es mir, statt ihn zu
 verschieben.
+
+---
+
+*Ab hier: dazugekommen am Mittwoch, als die Anwendung anfing.*
+
+## Die Anwendung
+
+Next.js im Browser, Supabase als Datenbank, Vercel fuers Hosting.
+
+- **Geschrieben wird nur in `src/app/aktionen.ts`.** Alle anderen Dateien
+  lesen. Wer eine neue Schreibfunktion braucht, legt sie dort an.
+- **Die `user_id` kommt aus der Sitzung, nie aus dem Formular.** Sonst kann
+  jemand Karten unter fremdem Namen anlegen.
+- **Row Level Security bleibt an.** Wenn eine Abfrage nichts zurueckgibt, ist
+  fast immer die Zugriffsregel gemeint, nicht der Code. Regel pruefen, nicht
+  Sicherheit abschalten.
+- **Keine zusaetzliche Bibliothek fuers Ziehen und Fallenlassen.** Der Browser
+  kann das selbst.
+- **Schema-Aenderungen gehoeren nach `supabase/schema.sql`** und werden so
+  geschrieben, dass das Skript mehrfach laufen kann (`create table if not
+  exists`, `drop policy if exists`). Sonst kann niemand den Stand nachbauen.
+
+Bevor etwas als fertig gilt:
+
+```bash
+npm run lint
+npm run build
+```
